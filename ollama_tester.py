@@ -60,8 +60,8 @@ class OllamaEvaluator:
         try:
             response = self.client.list()
             models = response.models
-            available_models = [model['name'] for model in models['models']]
-            
+            available_models = [model.model for model in models]
+
             if self.model_name not in available_models:
                 print(f"{Fore.RED}❌ Error: Model '{self.model_name}' is not available.")
                 print(f"{Fore.YELLOW}📋 Available models:")
