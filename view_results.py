@@ -12,7 +12,7 @@ from colorama import init, Fore, Style
 # Initialize colorama
 init(autoreset=True)
 
-JSON_LOG_FILE = "ollama_test_results.json"
+JSON_LOG_FILE = "test/ollama_test_results.json"
 
 def load_results():
     """Load results from JSON file"""
